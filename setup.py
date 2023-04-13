@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__version="0.16.0.2"
+__version="1.0.0"
 
 spec = {
     "name": "oc_pyfs",
