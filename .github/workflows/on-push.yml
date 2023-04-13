@@ -22,4 +22,4 @@ jobs:
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
           verbose: true
-          repository-url: {{ vars.PYPI_REPO_URL }}
+          repository-url: ${{ vars.PYPI_REPO_URL }}
