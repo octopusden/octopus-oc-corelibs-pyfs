@@ -1,0 +1,14 @@
+name: Build and deploy pyfs
+on: [push]
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment: Test
+    permissions:
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install pysvn
+        run: sudo apt-get install python3-pysvn
+
