@@ -12,4 +12,4 @@ jobs:
       - name: Install pysvn
         run: sudo apt-get install python3-pysvn
       - name: Setup
-        run: python3 -m pip install oc_pyfs && python3 -m unittest discover -v && python3 setup.py bdist_wheel
+        run: sudo python3 -m pip install ./ && python3 -m unittest discover -v && python3 setup.py bdist_wheel
