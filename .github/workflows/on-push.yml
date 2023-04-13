@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install setuptools
+        run: python3 -m pip install --upgrade pip setuptools wheel
       - name: Install pysvn
         run: sudo apt-get install python3-pysvn
       - name: Setup
