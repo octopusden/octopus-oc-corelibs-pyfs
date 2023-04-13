@@ -2,7 +2,7 @@ name: On push, deploying to Test
 on: [push]
 jobs:
   run-build-and-deploy:
-    uses: octopusden/octopus-base/.github/workflows/common-py-2-3-build-deploy.yml@add-common-wf
+    uses: octopusden/octopus-base/.github/workflows/common-py3-pysvn-build-deploy.yml@add-common-wf
     with:
       process_env: Test
     secrets: inherit
