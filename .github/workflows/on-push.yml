@@ -15,3 +15,11 @@ jobs:
         run: sudo apt-get install python3-pysvn
       - name: Setup
         run: sudo python3 -m pip install ./ && python3 -m unittest discover -v && sudo python3 setup.py bdist_wheel
+      - name: Remove tars
+        run: rm -f dist/*.tar.gz
+      - name: Publish
+        uses: pypa/git-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          verbose: true
+          repository-url: {{ vars.PYPI_REPO_URL }}
