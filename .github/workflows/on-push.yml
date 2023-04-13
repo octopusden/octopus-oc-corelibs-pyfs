@@ -14,4 +14,4 @@ jobs:
       - name: Install pysvn
         run: sudo apt-get install python3-pysvn
       - name: Setup
-        run: sudo python3 -m pip install ./ && python3 -m unittest discover -v && python3 setup.py bdist_wheel
+        run: sudo python3 -m pip install ./ && python3 -m unittest discover -v && sudo python3 setup.py bdist_wheel
