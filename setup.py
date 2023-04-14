@@ -1,12 +1,14 @@
 from setuptools import setup
 
-__version="0.16.0.1"
+__version="1.0.6"
 
 spec = {
     "name": "oc_pyfs",
     "version": __version,
-    "license": "LGPLv2",
+    "license": "Apache License 2.0",
     "description": "PyFilesystem interfaces",
+    "long_description": "",
+    "long_description_content_type": "text/plain",
     "packages": ["oc_pyfs"],
     "install_requires": [
         "chardet >= 2.3.0",
