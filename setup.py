@@ -1,9 +1,9 @@
 from setuptools import setup
 
-__version="1.0.6"
+__version="1.0.7"
 
 spec = {
-    "name": "oc_pyfs",
+    "name": "oc-pyfs",
     "version": __version,
     "license": "Apache License 2.0",
     "description": "PyFilesystem interfaces",
@@ -13,10 +13,10 @@ spec = {
     "install_requires": [
         "chardet >= 2.3.0",
         "fs",
-        "oc_cdtapi"
+        "oc-cdtapi"
     ],
     "package_data": {},
-    "python_requires": ">=2.6",
+    "python_requires": ">=3.6",
 }
 
 setup(**spec)
