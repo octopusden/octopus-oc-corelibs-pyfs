@@ -13,7 +13,8 @@ spec = {
     "install_requires": [
         "chardet >= 2.3.0",
         "fs",
-        "oc-cdtapi"
+        "oc-cdtapi",
+        "pysvn"
     ],
     "package_data": {},
     "python_requires": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*"
