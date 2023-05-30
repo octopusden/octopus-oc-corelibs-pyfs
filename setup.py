@@ -1,6 +1,6 @@
 from setuptools import setup
 
-__version="1.0.7"
+__version="1.0.8"
 
 spec = {
     "name": "oc-pyfs",
@@ -16,7 +16,7 @@ spec = {
         "oc-cdtapi"
     ],
     "package_data": {},
-    "python_requires": ">=3.6",
+    "python_requires": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*"
 }
 
 setup(**spec)
